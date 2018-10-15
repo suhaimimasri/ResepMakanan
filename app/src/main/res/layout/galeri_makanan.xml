@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            app:backgroundTint="@color/olive"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgroundandroid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <ImageView
+                    android:id="@+id/gambaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="top"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ayamkremes" />
+
+                <TextView
+                    android:id="@+id/resep"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginTop="-40dp"
+                    android:layout_gravity="center"
+                    android:textSize="40dp"
+                    android:text="Tajuk"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1.5"
+                    android:background="@drawable/recblack"
+                    android:padding="3dp"
+                    android:fontFamily="@font/octobermoon"
+                    android:backgroundTintMode="src_over"
+                    android:textColor="@color/graylight"/>
+
+                <TextView
+                    android:id="@+id/Reseprecipe"
+                    android:layout_width="380dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:text="Description"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/helvetica"
+                    android:background="@color/graylight"
+                    android:alpha="0.9"
+                    android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+    
